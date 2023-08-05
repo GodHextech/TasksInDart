@@ -2,11 +2,6 @@
 
 Welcome to the **TasksInDart** repository! If you are new to Dart or this repository, this guide will help you get started and contribute to the exciting world of Dart programming.
 
-## Table of Contents
-
-- [Dart Installation](#dart-installation)
-- [Running Dart Programs](#running-dart-programs)
-- [Contributing Guidelines](#contributing-guidelines)
 
 ## Dart Installation
 
