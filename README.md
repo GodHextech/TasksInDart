@@ -1,6 +1,6 @@
 # TasksInDart Repository
 
-![Dart Logo](https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart Logo" width="200">
 
 ## Description
 
