@@ -119,11 +119,21 @@ void continuar() {
 }
 
 var condicao = true;
-var operacao = 4;
-
 void main() {
   while (condicao == true) {
-    switch (operacao) {
+    print('''
+--- Calculadora Simples ---
+Escolha a operação:
+1 - Adição
+2 - Subtração
+3 - Multiplicação
+4 - Divisão
+5 - Sair
+''');
+    String InputOperation = stdin.readLineSync()!;
+    int operation = int.parse(InputOperation);
+
+    switch (operation) {
       case 1:
         InputSoma();
         continuar();
