@@ -55,31 +55,41 @@ void main() {
   print('''
 --- Jogo de Adivinhação Numérica ---
 Tente adivinhar o número entre 1 e 100.
+Caso queira desistir antes de encontrar o resultado digite: 0.
 ''');
   print(' ');
   while (trying == true) {
     print('Digite sua tentativa: ');
     String input = stdin.readLineSync()!;
     var attempt = int.parse(input);
-    if (attempt < numeroAleatorio) {
-      print('O número é maior do que ${attempt}.');
-    } else if (attempt > numeroAleatorio) {
-      print('O numero é menor do que ${attempt}');
-    }
-    att += 1;
-    if (attempt == numeroAleatorio) {
+    if (attempt == 00) {
       trying = false;
-      print('Parabéns! Você acertou o número em ${att} tentativas.');
-      print(' ');
-      print('Deseja jogar novamente? (S/N)');
-      String input2 = stdin.readLineSync()!;
-      print(' ');
-      if (input2.toLowerCase() == 's') {
-        numeroAleatorio = random.nextInt(100) + 1;
-        trying = true;
-        att = 0;
+      print('Uma pena ter desitido, tente novamente depois. Até logo!');
+    } else {
+      if ((attempt < 1) || (attempt > 100)) {
+        print('numero invalido');
       } else {
-        print('Obrigado por jogar. Até logo!');
+        if (attempt < numeroAleatorio) {
+          print('O número é maior do que ${attempt}.');
+        } else if (attempt > numeroAleatorio) {
+          print('O numero é menor do que ${attempt}');
+        }
+        att += 1;
+        if (attempt == numeroAleatorio) {
+          trying = false;
+          print('Parabéns! Você acertou o número em ${att} tentativas.');
+          print(' ');
+          print('Deseja jogar novamente? (S/N)');
+          String input2 = stdin.readLineSync()!;
+          print(' ');
+          if (input2.toLowerCase() == 's') {
+            numeroAleatorio = random.nextInt(100) + 1;
+            trying = true;
+            att = 0;
+          } else {
+            print('Obrigado por jogar. Até logo!');
+          }
+        }
       }
     }
   }
