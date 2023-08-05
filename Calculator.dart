@@ -40,8 +40,9 @@ Escolha a operação:
 5 - Sair
 
 Digite sua escolha: 5
+Obrigado por usar a calculadora. Até logo!
+*/
 
-Obrigado por usar a calculadora. Até logo!*/
 import 'dart:io';
 
 double Soma(double a, double b) {
@@ -65,53 +66,56 @@ double Div(double a, double b) {
 }
 
 void InputSoma() {
-  print('informe um numero');
+  print('Digite o primeiro número: ');
   String input1 = stdin.readLineSync()!;
   var a = double.parse(input1);
-  print('informe outro numero');
+  print('Digite o segundo número: ');
   String input2 = stdin.readLineSync()!;
   var b = double.parse(input2);
 
-  print(Soma(a, b));
+  print('Resultado: ${a} + ${b} = ${Soma(a, b)}');
 }
 
 void InputSub() {
-  print('informe um numero');
+  print('Digite o primeiro número: ');
   String input1 = stdin.readLineSync()!;
   var a = double.parse(input1);
-  print('informe outro numero');
+  print('Digite o segundo número: ');
   String input2 = stdin.readLineSync()!;
   var b = double.parse(input2);
 
-  print(Sub(a, b));
+  print('Resultado: ${a} - ${b} = ${Sub(a, b)}');
 }
 
 void InputMulti() {
-  print('informe um numero');
+  print('Digite o primeiro número: ');
   String input1 = stdin.readLineSync()!;
   var a = double.parse(input1);
-  print('informe outro numero');
+  print('Digite o segundo número: ');
   String input2 = stdin.readLineSync()!;
   var b = double.parse(input2);
 
-  print(Multi(a, b));
+  print('Resultado: ${a} * ${b} = ${Multi(a, b)}');
 }
 
 void InputDiv() {
-  print('informe um numero');
+  print('Digite o primeiro número: ');
   String input1 = stdin.readLineSync()!;
   var a = double.parse(input1);
-  print('informe outro numero');
+  print('Digite o segundo número: ');
   String input2 = stdin.readLineSync()!;
   var b = double.parse(input2);
-
-  print(Div(a, b));
+  if (b == 0) {
+    print('Erro: Divisão por zero não é permitida.');
+  } else {
+    print('Resultado: ${a} / ${b} = ${Div(a, b)}');
+  }
 }
 
 void continuar() {
-  print('deseja continuar?(s/n)');
+  print('Deseja continuar? (S/N) ');
   String input = stdin.readLineSync()!;
-  if (input == 's') {
+  if (input.toLowerCase() == 's') {
     condicao = true;
   } else {
     condicao = false;
@@ -130,8 +134,11 @@ Escolha a operação:
 4 - Divisão
 5 - Sair
 ''');
+    print('Digita sua escolha: ');
     String InputOperation = stdin.readLineSync()!;
     int operation = int.parse(InputOperation);
+
+    print(' ');
 
     switch (operation) {
       case 1:
@@ -151,21 +158,10 @@ Escolha a operação:
         continuar();
         break;
       case 5:
+        print('Obrigado por usar a calculadora. Até logo!');
+        condicao = false;
         break;
       default:
     }
   }
-
-  /* print("Digite um número: ");
-
-  // Usando stdin.readLineSync() para obter a entrada do usuário
-  String input = stdin.readLineSync()!;
-
-  // Convertendo a entrada do usuário para um número inteiro
-  int numero = int.parse(input);
-
-  // Realizando alguma operação com o número informado
-  int resultado = numero * 2;
-
-  print("O dobro do número informado é: $resultado");*/
 }
