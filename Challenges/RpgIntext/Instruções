@@ -106,7 +106,6 @@ Você é a última esperança de Eldoria. Seu nome será cantado em canções e 
 - classe;
 2. Vila:
 switch case{
-- Conversar com o prefeito;
 - ver quadro de misões;
 - ir no ferreiro: melhorar arma, armadura;
 - dormir(recupera hp);

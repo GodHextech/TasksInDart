@@ -1,13 +1,12 @@
 import 'ClassPersonagem.dart';
-import 'ClassArqueiro.dart';
-import 'ClassGuerreiro.dart';
-import 'ClassMago.dart';
-import 'ClassInimigos.dart';
-import 'ClassArmas.dart';
+import 'Classes/ClassArqueiro.dart';
+import 'Classes/ClassGuerreiro.dart';
+import 'Classes/ClassMago.dart';
+//import 'ClassInimigos.dart';
+//import 'ClassArmas.dart';
 import 'dart:io';
-
-var Vila;
 void main() {
+  var on = true;
   print('''
         !!BEM VINDO A JORNADA DO HERÓI EM TEXTO!!
 1. COMEÇAR;
@@ -33,18 +32,17 @@ void main() {
       switch (choose) {
         case 1:
           teste.Classe = Guerreiro();
-          print('Parabéns você se tornou um guerreiro');
+          print('Parabéns você se tornou um guerreiro!');
           break;
         case 2:
           teste.Classe = Arqueiro();
-          print('Parabéns você se tornou um arqueiro');
+          print('Parabéns você se tornou um arqueiro!');
           break;
         case 3:
           teste.Classe = Mago();
-          print('Parabéns você se tornou um mago');
+          print('Parabéns você se tornou um mago!');
           break;
       }
-
       /*===================================================*/
       print(' ');
       print('''Prefeito: Olá visitante, como posso chama-lo?''');
@@ -56,12 +54,62 @@ void main() {
       print(
           '''Você: Que interessante! Vou dar uma olhada depois, muito obrigado pela recepção.''');
       print(' ');
-      switch (Vila) {
-        case 1:
-          break;
-        default:
+      /*===================================================*/
+      while (on = true) {
+        print('''ESCOLHAS:
+      1. VER QUADRO DE MISSÕES;
+      2. IR AO FERREIRO;
+      3. DORMIR;
+      4. IR A LOJA;''');
+        String input5 = stdin.readLineSync()!;
+        int Vila = int.parse(input5);
+        switch (Vila) {
+          case 1:
+            on = false;
+            print('''--QUADRO DE MISSÕES--
+            Missão 1: Matar uma sombra rastejante;
+            Recompensas: 10 ouros, 2 níveis;
+            
+            Missão 2: Investigar uma dungeon;
+            Recompensas: arma nova, 2 níveis, 10 ouros;
+            
+            Missão 3: Escolta de entrega;
+            Recompensas: bilhete de melhoria no ferreiro, 10 ouros;
+            ''');
+            print(' ');
+            print('''Ações: 
+          1. Ir para alguma missão;
+          2. Voltar depois;''');
+            String input4 = stdin.readLineSync()!;
+            int mission = int.parse(input4);
+            switch (mission) {
+              case 1:
+                break;
+              case 2:
+                on = true;
+                break;
+              default:
+            }
+          case 2:
+            print('''Ferreiro: Bem vindo! O que deseja?''');
+            print('''Ações:
+            1. Melhorar arma(+2 de ataque);
+            2. Melhorar armadura(+2 de defesa);
+            3. Sair.''');
+            String input6 = stdin.readLineSync()!;
+            int ferreiro = int.parse(input6);
+            switch (ferreiro) {
+              case 1:
+                break;
+              case 2:
+                break;
+              case 3:
+                on = true;
+                break;
+            }
+            break;
+        }
       }
-      break;
     case 2:
       print('OBRIGADO POR TESTAR NOSSO JOGO!!');
       break;

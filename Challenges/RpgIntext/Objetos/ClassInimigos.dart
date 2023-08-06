@@ -23,7 +23,6 @@ class ElfoNegro {}
 class BloodSpectrum {}
 
 void main() {
-  SombraRastejante m1 = new SombraRastejante(50, 10);
 }
 /*Sombra Rastejante:
 Atributos:
