@@ -1,6 +1,4 @@
 /*
-Claro! Aqui está uma tarefa mais desafiadora em Dart:
-
 Tarefa: Criar um jogo de adivinhação numérica.
 
 Descrição: Você deve criar um jogo em que o computador escolhe um número aleatório entre 1 e 100, e o jogador tem que adivinhar qual é esse número. O computador deve fornecer dicas ao jogador, informando se o número a ser adivinhado é maior ou menor do que a tentativa atual. O jogo deve continuar até que o jogador acerte o número ou decida sair.
