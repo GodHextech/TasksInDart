@@ -1,0 +1,21 @@
+Tarefa: Criar um jogo de RPG de texto.
+
+Descrição: Vocês devem criar um jogo de RPG de texto, onde o jogador assume o papel de um herói em uma jornada épica. O jogo deve ter um enredo interessante e permitir ao jogador tomar decisões que afetarão o desenvolvimento da história.
+
+Funcionalidades principais:
+
+O jogador deve criar um personagem no início do jogo, com atributos como nome, classe (guerreiro, mago, arqueiro, etc.) e pontos de vida (HP) iniciais.
+O jogo deve ter uma narrativa envolvente e apresentar situações em que o jogador deve tomar decisões. As escolhas do jogador afetarão o curso da história e poderão resultar em batalhas, recompensas ou consequências.
+Implementar batalhas em turnos contra inimigos, onde o jogador pode atacar, usar habilidades especiais, curar-se ou fugir.
+Permitir ao jogador encontrar itens durante a aventura, como armas, armaduras, poções, etc.
+Criar um sistema de evolução do personagem, onde ele pode ganhar experiência (XP) ao derrotar inimigos e subir de nível, aumentando seus atributos e habilidades.
+Incluir um sistema de save/load do jogo para que o jogador possa salvar o progresso e continuar a partir de onde parou em uma sessão posterior.
+Oferecer um sistema de combate com vários inimigos, incluindo chefes, que serão mais desafiadores e recompensadores.
+Regras e considerações:
+
+Utilize classes e objetos para representar os personagens, inimigos, itens, etc.
+Use estruturas de dados adequadas para armazenar informações do jogo, como listas, mapas, etc.
+Utilize funções e métodos para organizar o código de forma modular e reutilizável.
+Implemente uma interface de usuário intuitiva para que o jogador possa interagir facilmente com o jogo.
+Faça uso de recursos visuais, como ASCII art ou gráficos simples, para enriquecer a experiência do jogador.
+O objetivo é criar um jogo de RPG imersivo e divertido, que permita aos jogadores tomarem decisões estratégicas e sentir que estão participando de uma aventura emocionante. Divirta-se explorando todas as funcionalidades que a linguagem Dart oferece, como classes, objetos, funções, estruturas de controle, exceções, entre outros recursos. Boa sorte à equipe!
