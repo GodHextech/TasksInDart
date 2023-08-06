@@ -37,7 +37,7 @@ void MarcarConcluido() {
   list.remove(list[check]);
 }
 
-void TarefasCheck() {
+void TasksCheck() {
   for (var i = 0; i < listcheck.length; i++) {
     print('${i}. ${listcheck[i]}');
   }
@@ -97,7 +97,7 @@ void main() {
       case 4:
         print(' ');
         print('Tarefas concluídas: ');
-        TarefasCheck();
+        TasksCheck();
 
         break;
       case 5:
