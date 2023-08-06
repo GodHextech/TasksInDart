@@ -1,4 +1,6 @@
-class Guerreiro {
+import '../ClassPersonagem.dart';
+
+class Guerreiro extends Personagem {
   var Hp, Armadura, Stamina, Arma, Habilidades, Exp, Strength;
   Guerreiro(
       {this.Hp = 110,

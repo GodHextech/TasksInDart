@@ -1,4 +1,6 @@
-class Mago {
+import '../ClassPersonagem.dart';
+
+class Mago extends Personagem {
   var Hp, Armadura, Arma, Habilidades, Exp, Mana, Poder;
   Mago({
     this.Hp = 0,

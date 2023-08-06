@@ -1,4 +1,6 @@
-class Arqueiro {
+import '../ClassPersonagem.dart';
+
+class Arqueiro extends Personagem {
   var Hp, Armadura, Arma, Exp, Habilidades, Destreza, Stamina;
   Arqueiro(
       {this.Hp = 0,
