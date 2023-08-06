@@ -1,9 +1,5 @@
 class Personagem {
-  var Vida;
-  var Nome;
-  var Classe;
-  var Nivel;
-  var Inventory;
+  var Vida, Nome, Classe, Nivel, Inventory;
   Personagem(this.Nome, this.Classe);
 
   void Atack() {}

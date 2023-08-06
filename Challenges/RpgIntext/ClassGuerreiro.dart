@@ -1,26 +1,13 @@
 class Guerreiro {
-  var Hp;
-  var Armadura;
-  var Stamina;
-  var Arma;
-  var Habilidades;
-  var Exp;
-  var Strenght;
+  var Hp, Armadura, Stamina, Arma, Habilidades, Exp, Strength;
   Guerreiro(
-      {this.Hp = 0,
-      this.Armadura = 0,
+      {this.Hp = 110,
+      this.Armadura = 20,
       this.Arma = null,
       this.Exp = 0,
       this.Habilidades = 0,
-      this.Stamina = 0,
-      this.Strenght = 0});
-}
+      this.Stamina = 1,
+      this.Strength = 1});
 
-void main() {
-  Guerreiro p1 = new Guerreiro();
-  p1.Hp = 100;
-  p1.Arma = 'Espada';
-  p1.Armadura = 100;
-  p1.Stamina = 50;
-  p1.Strenght = 100;
+  void main() {}
 }
