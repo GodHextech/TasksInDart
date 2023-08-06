@@ -1,105 +1,19 @@
 /*
---- Gerenciamento de Tarefas (To-Do List) ---
-Opções:
-1 - Adicionar tarefa
-2 - Marcar tarefa como concluída
-3 - Exibir tarefas pendentes
-4 - Exibir tarefas concluídas
-5 - Remover tarefa
-6 - Exibir número total de tarefas
-0 - Sair
+Tarefa: Criar um programa de gerenciamento de tarefas (to-do list).
 
-Digite sua opção: 1
+Descrição: Você deve criar um programa que permita ao usuário gerenciar uma lista de tarefas. O programa deve oferecer as seguintes funcionalidades:
 
-Digite o nome da nova tarefa: Comprar leite
+Adicionar uma nova tarefa à lista.
+Marcar uma tarefa como concluída.
+Exibir todas as tarefas pendentes.
+Exibir todas as tarefas concluídas.
+Remover uma tarefa da lista.
+Exibir o número total de tarefas pendentes e concluídas.
+Regras:
 
-Tarefa 'Comprar leite' adicionada com sucesso!
-
-Opções:
-1 - Adicionar tarefa
-2 - Marcar tarefa como concluída
-3 - Exibir tarefas pendentes
-4 - Exibir tarefas concluídas
-5 - Remover tarefa
-6 - Exibir número total de tarefas
-0 - Sair
-
-Digite sua opção: 1
-
-Digite o nome da nova tarefa: Pagar contas
-
-Tarefa 'Pagar contas' adicionada com sucesso!
-
-Opções:
-1 - Adicionar tarefa
-2 - Marcar tarefa como concluída
-3 - Exibir tarefas pendentes
-4 - Exibir tarefas concluídas
-5 - Remover tarefa
-6 - Exibir número total de tarefas
-0 - Sair
-
-Digite sua opção: 3
-
-Tarefas pendentes:
-1. Comprar leite
-2. Pagar contas
-
-Opções:
-1 - Adicionar tarefa
-2 - Marcar tarefa como concluída
-3 - Exibir tarefas pendentes
-4 - Exibir tarefas concluídas
-5 - Remover tarefa
-6 - Exibir número total de tarefas
-0 - Sair
-
-Digite sua opção: 2
-
-Digite o número da tarefa que deseja marcar como concluída: 1
-
-Tarefa 'Comprar leite' marcada como concluída!
-
-Opções:
-1 - Adicionar tarefa
-2 - Marcar tarefa como concluída
-3 - Exibir tarefas pendentes
-4 - Exibir tarefas concluídas
-5 - Remover tarefa
-6 - Exibir número total de tarefas
-0 - Sair     
-
-Digite sua opção: 4
-
-Tarefas concluídas:
-1. Comprar leite
-
-Opções:
-1 - Adicionar tarefa
-2 - Marcar tarefa como concluída
-3 - Exibir tarefas pendentes
-4 - Exibir tarefas concluídas
-5 - Remover tarefa
-6 - Exibir número total de tarefas
-0 - Sair
-
-Digite sua opção: 6
-
-Total de tarefas pendentes: 1
-Total de tarefas concluídas: 1
-
-Opções:
-1 - Adicionar tarefa
-2 - Marcar tarefa como concluída
-3 - Exibir tarefas pendentes
-4 - Exibir tarefas concluídas
-5 - Remover tarefa
-6 - Exibir número total de tarefas
-0 - Sair
-
-Digite sua opção: 0
-
-Obrigado por usar o Gerenciamento de Tarefas. Até logo!
+Cada tarefa deve ter um nome ou descrição.
+As tarefas podem ser marcadas como "pendentes" ou "concluídas".
+O programa deve permitir ao usuário interagir com um menu de opções para realizar as operações.
 */
 import 'dart:io';
 
