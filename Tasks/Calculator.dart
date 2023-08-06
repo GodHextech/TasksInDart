@@ -1,46 +1,13 @@
 /*
---- Calculadora Simples ---
-Escolha a operação:
-1 - Adição
-2 - Subtração
-3 - Multiplicação
-4 - Divisão
-5 - Sair
+Tarefa: Criar uma calculadora simples em Dart.
 
-Digite sua escolha: 1
+Descrição: Você deve criar uma calculadora que permita ao usuário realizar operações de adição, subtração, multiplicação e divisão entre dois números. A calculadora deve exibir um menu para o usuário escolher a operação desejada, solicitar os dois números de entrada e, em seguida, mostrar o resultado da operação escolhida.
 
-Digite o primeiro número: 10
-Digite o segundo número: 5
+Regras:
 
-Resultado: 10 + 5 = 15
-
-Deseja continuar? (S/N) S
-
-Escolha a operação:
-1 - Adição
-2 - Subtração
-3 - Multiplicação
-4 - Divisão
-5 - Sair
-
-Digite sua escolha: 4
-
-Digite o primeiro número: 10
-Digite o segundo número: 0
-
-Erro: Divisão por zero não é permitida.
-
-Deseja continuar? (S/N) S
-
-Escolha a operação:
-1 - Adição
-2 - Subtração
-3 - Multiplicação
-4 - Divisão
-5 - Sair
-
-Digite sua escolha: 5
-Obrigado por usar a calculadora. Até logo!
+O programa deve verificar se os números de entrada são válidos (números inteiros ou de ponto flutuante).
+Caso o usuário escolha a operação de divisão, certifique-se de que o segundo número não seja zero.
+O programa deve continuar executando até que o usuário decida sair explicitamente.
 */
 
 import 'dart:io';
