@@ -1,21 +1,120 @@
-Tarefa: Criar um jogo de RPG de texto.
+*Tarefa: Criar um jogo de RPG de texto.*
 
-Descrição: Vocês devem criar um jogo de RPG de texto, onde o jogador assume o papel de um herói em uma jornada épica. O jogo deve ter um enredo interessante e permitir ao jogador tomar decisões que afetarão o desenvolvimento da história.
+# Descrição: Vocês devem criar um jogo de RPG de texto, onde o jogador assume o papel de um herói em uma jornada épica. O jogo deve ter um enredo interessante e permitir ao jogador tomar decisões que afetarão o desenvolvimento da história.
 
-Funcionalidades principais:
+# Funcionalidades principais:
+- O jogador deve criar um personagem no início do jogo, com atributos como nome, classe (guerreiro, mago, arqueiro, etc.) e pontos de vida (HP) iniciais.
+- O jogo deve ter uma narrativa envolvente e apresentar situações em que o jogador deve tomar decisões. As escolhas do jogador afetarão o curso da história e poderão resultar em batalhas, recompensas ou consequências.
+- Implementar batalhas em turnos contra inimigos, onde o jogador pode atacar, usar habilidades especiais, curar-se ou fugir.
+- Permitir ao jogador encontrar itens durante a aventura, como armas, armaduras, poções, etc.
+- Criar um sistema de evolução do personagem, onde ele pode ganhar experiência (XP) ao derrotar inimigos e subir de nível, aumentando seus atributos e habilidades.
+- Incluir um sistema de save/load do jogo para que o jogador possa salvar o progresso e continuar a partir de onde parou em uma sessão posterior.
+- Oferecer um sistema de combate com vários inimigos, incluindo chefes, que serão mais desafiadores e recompensadores.
 
-O jogador deve criar um personagem no início do jogo, com atributos como nome, classe (guerreiro, mago, arqueiro, etc.) e pontos de vida (HP) iniciais.
-O jogo deve ter uma narrativa envolvente e apresentar situações em que o jogador deve tomar decisões. As escolhas do jogador afetarão o curso da história e poderão resultar em batalhas, recompensas ou consequências.
-Implementar batalhas em turnos contra inimigos, onde o jogador pode atacar, usar habilidades especiais, curar-se ou fugir.
-Permitir ao jogador encontrar itens durante a aventura, como armas, armaduras, poções, etc.
-Criar um sistema de evolução do personagem, onde ele pode ganhar experiência (XP) ao derrotar inimigos e subir de nível, aumentando seus atributos e habilidades.
-Incluir um sistema de save/load do jogo para que o jogador possa salvar o progresso e continuar a partir de onde parou em uma sessão posterior.
-Oferecer um sistema de combate com vários inimigos, incluindo chefes, que serão mais desafiadores e recompensadores.
-Regras e considerações:
+# Regras e considerações:
+- Utilize classes e objetos para representar os personagens, inimigos, itens, etc.
+- Use estruturas de dados adequadas para armazenar informações do jogo, como listas, mapas, etc.
+- Utilize funções e métodos para organizar o código de forma modular e reutilizável.
+- Implemente uma interface de usuário intuitiva para que o jogador possa interagir facilmente com o jogo.
+- Faça uso de recursos visuais, como ASCII art ou gráficos simples, para enriquecer a experiência do jogador.
+- O objetivo é criar um jogo de RPG imersivo e divertido, que permita aos jogadores tomarem decisões estratégicas e sentir que estão participando de uma aventura emocionante. Divirta-se explorando todas as funcionalidades que a linguagem Dart oferece, como classes, objetos, funções, estruturas de controle, exceções, entre outros recursos. Boa sorte à equipe!
 
-Utilize classes e objetos para representar os personagens, inimigos, itens, etc.
-Use estruturas de dados adequadas para armazenar informações do jogo, como listas, mapas, etc.
-Utilize funções e métodos para organizar o código de forma modular e reutilizável.
-Implemente uma interface de usuário intuitiva para que o jogador possa interagir facilmente com o jogo.
-Faça uso de recursos visuais, como ASCII art ou gráficos simples, para enriquecer a experiência do jogador.
-O objetivo é criar um jogo de RPG imersivo e divertido, que permita aos jogadores tomarem decisões estratégicas e sentir que estão participando de uma aventura emocionante. Divirta-se explorando todas as funcionalidades que a linguagem Dart oferece, como classes, objetos, funções, estruturas de controle, exceções, entre outros recursos. Boa sorte à equipe!
+
+# Personagem:
+*Atributos:*
+- Classe;
+- Nome;
+- Nível;
+- Vida;
+*Ações:*
+1. Atacar;
+2. Curar;
+3. Fugir;
+4. Usar habilidade;
+5. Inventario;
+
+
+
+# Classes:
+- Arqueiro;
+- Guerreiro;
+- Mago;
+
+
+
+# Arqueiro 
+*Atributos:*
+1. HP;
+2. Armadura;
+3. Arco;
+4. Arrow;
+5. Exp;
+6. Habilidades;
+7. Destreza;
+8. Stamina;
+9. Inventário;
+
+
+# Mago:
+*Atributos:*
+1. HP;
+2. Armadura;
+3. Mana;
+4. Cajado;
+5. Poder;
+6. Exp;
+7. Habilidades;
+9. Inventário;
+
+
+# Guerreiro:
+*Atributos:*
+1. HP;
+2. Armadura;
+3. Stamina;
+4. Espada;
+5. Habilidades;
+6. Exp;
+7. Força;
+9. Inventário;
+
+
+**Título: A Jornada do Herói Perdido**
+História:
+
+Há muitos séculos, em um reino mágico e repleto de lendas, um herói desconhecido inicia uma jornada que mudará o destino de toda a terra de Eldoria. Você é esse herói perdido, cujo destino é escrito pelas mãos do tempo.
+
+Você acorda em uma floresta densa e misteriosa, sem lembrar quem é ou como chegou ali. A única coisa que você possui é um medalhão dourado com um símbolo enigmático gravado. Enquanto caminha por entre as árvores, encontra um ancião sábio que reconhece o símbolo em seu medalhão.
+
+"Você é o herdeiro perdido do clã dos guardiões do equilíbrio," diz o ancião. "Eldoria está à beira da destruição, mergulhada em uma guerra entre as forças da luz e das trevas. Somente você, com sua habilidade única de controlar as energias elementares, pode salvar o reino."
+
+O ancião o ajuda a recuperar suas memórias, revelando que você é um(a) elementalista, um ser capaz de manipular os elementos da natureza - fogo, água, terra e ar. Sua missão é encontrar os quatro artefatos elementares perdidos, que concedem um poder inimaginável ao seu portador.
+
+Você embarca em uma jornada épica por terras desconhecidas, enfrentando perigos, inimigos poderosos e desvendando enigmas milenares. Ao longo da jornada, você fará escolhas difíceis que afetarão o destino de Eldoria. Alianças serão forjadas e traições serão descobertas, testando sua coragem e moralidade.
+
+Durante sua aventura, você encontrará aliados valiosos, como uma arqueira habilidosa, um mago sábio e um guerreiro destemido. Cada um com habilidades únicas e histórias fascinantes. Juntos, vocês formam um grupo improvável, mas poderoso, determinado a trazer o equilíbrio de volta a Eldoria.
+
+No entanto, a escuridão também possui seus asseclas. O temível Senhor das Sombras, um antigo vilão ressurgido, busca os artefatos elementares para dominar o reino e mergulhar Eldoria em trevas eternas.
+
+Chegará o momento em que você enfrentará o Senhor das Sombras e seus servos, em uma batalha épica que decidirá o destino de Eldoria. O resultado dependerá das suas escolhas, da força do seu espírito e do poder dos elementos que fluem em seu ser.
+
+Você é a última esperança de Eldoria. Seu nome será cantado em canções e lembrado nas histórias que atravessarão os séculos. A lenda do Herói Perdido está prestes a ser escrita. Boa sorte nesta jornada inesquecível. O destino de Eldoria aguarda por você.
+
+# Passos:
+1. Criar Personagem:
+- nome;
+- classe;
+2. Vila:
+switch case{
+- Conversar com o prefeito;
+- ver quadro de misões;
+- ir no ferreiro: melhorar arma, armadura;
+- dormir(recupera hp);
+- loja: poção de vida, stamina, mana, força, comprar flechas;
+}
+3. missões:
+- matar SombraRastejante: ganha 10 ouros, ganha 2 niveis;
+- investigar uma dungeon:  monstros, baú: arma, ganha 2 niveis, ganha 10 ouros; 
+- entrega monstro, bilhete melhorar arma, 10 ouros;
+4. Boss:
+*Dragão de fogo*;
