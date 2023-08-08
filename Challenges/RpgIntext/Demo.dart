@@ -30,40 +30,37 @@ void main() {
       3. Mago''');
       String input2 = stdin.readLineSync()!;
       int choose = int.parse(input2);
+      /*===================================================*/
       switch (choose) {
         case 1:
           teste = new Guerreiro();
-          teste.Classe = Guerreiro();
-          teste.Nome = nome;
+          teste.classe = 'Guerreiro';
+          teste.nome = nome;
           print('Parabéns você se tornou um guerreiro!');
           break;
         case 2:
           teste = new Arqueiro();
-          teste.Classe = Arqueiro();
-          teste.Nome = nome;
+          teste.classe = 'Arqueiro';
+          teste.nome = nome;
           print('Parabéns você se tornou um arqueiro!');
           break;
         case 3:
           teste = new Mago();
-          teste.Classe = Mago();
-          teste.Nome = nome;
+          teste.classe = 'Mago';
+          teste.nome = nome;
           print('Parabéns você se tornou um mago!');
           break;
       }
-      /*===================================================*/
-      print(teste.Nome);
-      teste.Atack();
-      teste.profile();
       print(' ');
       print('''Prefeito: Olá visitante, como posso chama-lo?''');
-      print('''Você: Olá! Me chamo , sou um em busca de aventuras.''');
+      print(
+          '''Você: Olá! Me chamo ${teste.nome}, sou um ${teste.classe} em busca de aventuras.''');
       print('''Prefeito: Muito prazer! Sou o prefeito desta vila. 
   Bom saber que ainda há aventureiros nessa região, há várias missões no quadro de missões.
   Fique a vontade para ficar em nossa vila.''');
       print(
           '''Você: Que interessante! Vou dar uma olhada depois, muito obrigado pela recepção.''');
       print(' ');
-
       /*===================================================*/
       while (on = true) {
         print('''ESCOLHAS:

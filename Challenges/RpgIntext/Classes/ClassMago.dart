@@ -1,24 +1,24 @@
 import '../ClassPersonagem.dart';
 
 class Mago extends Personagem {
-  var Hp, Armadura, Arma, Habilidades, Exp, Mana, Poder;
+  var hp, armadura, arma, habilidades, exp, mana, poder;
   Mago({
-    this.Hp = 0,
-    this.Armadura = 0,
-    this.Mana = 10,
-    this.Arma = null,
-    this.Poder = 0,
-    this.Exp = 0,
+    this.hp = 0,
+    this.armadura = 0,
+    this.mana = 10,
+    this.arma = null,
+    this.poder = 0,
+    this.exp = 0,
   });
 
   @override
-  void Atack() {
-    Mana = Mana - 1;
+  void atack() {
+    mana = mana - 1;
   }
 
   @override
   void profile() {
-    print('mana atual:${Mana}');
+    print('mana atual:${mana}');
   }
 }
 

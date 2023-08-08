@@ -1,15 +1,15 @@
 import '../ClassPersonagem.dart';
 
 class Arqueiro extends Personagem {
-  var Hp, Armadura, Arma, Exp, Habilidades, Destreza, Stamina;
+  var hp, armadura, arma, exp, habilidades, destreza, stamina;
   Arqueiro(
-      {this.Hp = 0,
-      this.Armadura = 0,
-      this.Arma = null,
-      this.Destreza = 0,
-      this.Exp = 0,
-      this.Habilidades = 0,
-      this.Stamina = 0});
+      {this.hp = 0,
+      this.armadura = 0,
+      this.arma = null,
+      this.destreza = 0,
+      this.exp = 0,
+      this.habilidades = 0,
+      this.stamina = 0});
 }
 
 void main() {
