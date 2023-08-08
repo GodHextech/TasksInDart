@@ -11,7 +11,7 @@ class Arqueiro extends Personagem {
       this.habilidades = 0,
       this.stamina = 10});
   @override
-  void profile() {
+  void profileclasse() {
     print('Hp: ${hp}');
     print('Armor: ${armadura}');
     print('Weapon: ${arma}');

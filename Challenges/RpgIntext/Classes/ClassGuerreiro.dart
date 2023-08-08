@@ -11,7 +11,7 @@ class Guerreiro extends Personagem {
       this.stamina = 10,
       this.strength = 1});
   @override
-  void profile() {
+  void profileclasse() {
     print('Hp: ${hp}');
     print('Armor: ${armadura}');
     print('Stamina: ${stamina}');
@@ -19,5 +19,6 @@ class Guerreiro extends Personagem {
     print('Exp: ${exp}');
     print('Strength: ${strength}');
   }
+
   void main() {}
 }

@@ -13,9 +13,25 @@ class Mago extends Personagem {
 
   @override
   void atack() {}
+  @override
+  void subirnivel() {
+    int total = 5;
+    if (exp < total) {
+      exp += 1;
+    }
+    if (exp == total) {
+      print('Parabéns!, você subiu de nível');
+      nivel += 1;
+      print('Nível atual: ${nivel}');
+      exp = 0;
+      hp += 5;
+      mana += 5;
+      poder += 1;
+    }
+  }
 
   @override
-  void profile() {
+  void profileclasse() {
     print('Hp: ${hp}');
     print('Armor: ${armadura}');
     print('Weapon: ${arma}');
