@@ -1,13 +1,17 @@
+import 'dart:ffi';
+
 import 'ClassPersonagem.dart';
 import 'Classes/ClassArqueiro.dart';
 import 'Classes/ClassGuerreiro.dart';
 import 'Classes/ClassMago.dart';
-//import 'ClassInimigos.dart';
+import 'Objetos/ClassArmas.dart';
+import 'Objetos/ClassInimigos.dart';
 //import 'ClassArmas.dart';
 import 'dart:io';
 
 void main() {
   var on = true;
+  Staff cajado = new Staff();
   Personagem teste = new Personagem();
   print(
       '==============================================================================');
@@ -68,6 +72,7 @@ void main() {
           teste = new Mago();
           teste.classe = 'Mago';
           teste.nome = nome;
+          teste.damage = cajado.damage;
           print('Parabéns você se tornou um mago!');
           teste.profileclasse();
           break;
@@ -84,6 +89,37 @@ void main() {
           '==============================================================================');
       print('''Você acorda perto de um vilareijo sem saber qual seu destino;
              Decide ir até o vilareijo...''');
+      print('Auuuu!!');
+      print('Você encontrou um lobo pelo caminho');
+      Lobo fera = new Lobo();
+      fera.golpe();
+      print('Você sofreu 5 de dano');
+      teste.hp -= fera.Damage;
+      print('Vida atual: ${teste.hp}');
+      print(
+          'O que deseja fazer, terá que derrota-lo(1) ou fugir(2) para chegar a vila;');
+      String input7 = stdin.readLineSync()!;
+      int combate = int.parse(input7);
+      switch (combate) {
+        case 1:
+          teste.atack();
+          fera.HP -= teste.damage;
+          print(fera.HP);
+          print('Vida do lobo: ${fera.HP}');
+          fera.golpe();
+          print('Você sofreu 5 de dano');
+          teste.hp -= fera.Damage;
+          print('Vida atual: ${teste.hp}');
+          teste.atack();
+          fera.HP -= teste.damage;
+          print(fera.HP);
+          print('Vida do lobo: ${fera.HP}');
+          print('Você derrotou o lobo, parabéns!');
+          break;
+        case 2:
+          break;
+        default:
+      }
       print(
           '==============================================================================');
 
@@ -163,6 +199,8 @@ Recompensas: bilhete de melhoria no ferreiro, 10 ouros;
             }
             break;
           case 3:
+            print('você descansou, e curou seu hp');
+            teste.hp = teste.hporiginal;
             break;
           case 4:
             break;

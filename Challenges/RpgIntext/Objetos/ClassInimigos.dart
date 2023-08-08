@@ -1,4 +1,12 @@
-class Lobo {}
+class Lobo {
+  var HP;
+  var Damage;
+  Lobo({this.HP = 10, this.Damage = 5});
+
+  void golpe() {
+    print('lobo atacou');
+  }
+}
 
 class SombraRastejante {
   var HP;
@@ -22,8 +30,7 @@ class ElfoNegro {}
 
 class BloodSpectrum {}
 
-void main() {
-}
+void main() {}
 /*Sombra Rastejante:
 Atributos:
 HP (Pontos de Vida): 50

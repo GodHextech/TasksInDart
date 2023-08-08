@@ -1,5 +1,5 @@
 class Personagem {
-  var vida, nome, classe, nivel, inventory, exp;
+  var vida, nome, classe, nivel, inventory, exp, hp, damage, hporiginal;
   Personagem({this.nivel = 0,this.vida = 1});
   //Personagem(this.Nome,this.Classe);
   void atack() {}
