@@ -8,6 +8,7 @@ import 'dart:io';
 
 void main() {
   var on = true;
+  Personagem teste = new Personagem();
   print('''
         !!BEM VINDO A JORNADA DO HERÓI EM TEXTO!!
 1. COMEÇAR;
@@ -31,26 +32,28 @@ void main() {
       int choose = int.parse(input2);
       switch (choose) {
         case 1:
-          Guerreiro teste = new Guerreiro();
+          teste = new Guerreiro();
           teste.Classe = Guerreiro();
           teste.Nome = nome;
           print('Parabéns você se tornou um guerreiro!');
           break;
         case 2:
-          Arqueiro teste = new Arqueiro();
+          teste = new Arqueiro();
           teste.Classe = Arqueiro();
           teste.Nome = nome;
           print('Parabéns você se tornou um arqueiro!');
           break;
         case 3:
-          Mago teste = new Mago();
+          teste = new Mago();
           teste.Classe = Mago();
           teste.Nome = nome;
           print('Parabéns você se tornou um mago!');
           break;
       }
-
       /*===================================================*/
+      print(teste.Nome);
+      teste.Atack();
+      teste.profile();
       print(' ');
       print('''Prefeito: Olá visitante, como posso chama-lo?''');
       print('''Você: Olá! Me chamo , sou um em busca de aventuras.''');
@@ -60,6 +63,7 @@ void main() {
       print(
           '''Você: Que interessante! Vou dar uma olhada depois, muito obrigado pela recepção.''');
       print(' ');
+
       /*===================================================*/
       while (on = true) {
         print('''ESCOLHAS:

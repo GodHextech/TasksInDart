@@ -11,5 +11,6 @@ class Personagem {
   void Escape() {}
   void UseHability() {}
   void Curar() {}
+  void profile(){}
 
 }
