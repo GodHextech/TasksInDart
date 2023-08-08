@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'ClassPersonagem.dart';
 import 'Classes/ClassArqueiro.dart';
 import 'Classes/ClassGuerreiro.dart';
@@ -9,19 +11,33 @@ import 'dart:io';
 void main() {
   var on = true;
   Personagem teste = new Personagem();
+  print(
+      '==============================================================================');
+
   print('''
         !!BEM VINDO A JORNADA DO HERÓI EM TEXTO!!
 1. COMEÇAR;
-2. SAIR;                                                                                                        
- ''');
+2. SAIR; 
+''');
+
   /*===================================================*/
   String input3 = stdin.readLineSync()!;
   int start = int.parse(input3);
+  print(
+      '==============================================================================');
   switch (start) {
     case 1:
-      print('UM JOVEM HERÓI ACORDA DE SEU SONO PROFUNDO E COMEÇA SUA JORNADA');
       print(' ');
-      print('Qual o nome do seu personagem');
+      print(
+          '==============================================================================');
+
+      print('UM JOVEM HERÓI ACORDA DE SEU SONO PROFUNDO E COMEÇA SUA JORNADA');
+
+      print(
+          '==============================================================================');
+
+      print(' ');
+      stdout.write('Qual o nome do seu personagem: ');
       String input = stdin.readLineSync()!;
       String nome = input;
       print('''Qual classe deseja:
@@ -30,28 +46,55 @@ void main() {
       3. Mago''');
       String input2 = stdin.readLineSync()!;
       int choose = int.parse(input2);
-      /*===================================================*/
+      print('');
+/*===================================================*/
+      print(
+          '==============================================================================');
+
       switch (choose) {
         case 1:
           teste = new Guerreiro();
           teste.classe = 'Guerreiro';
           teste.nome = nome;
           print('Parabéns você se tornou um guerreiro!');
+          teste.profile();
           break;
         case 2:
           teste = new Arqueiro();
           teste.classe = 'Arqueiro';
           teste.nome = nome;
           print('Parabéns você se tornou um arqueiro!');
+          teste.profile();
           break;
         case 3:
           teste = new Mago();
           teste.classe = 'Mago';
           teste.nome = nome;
           print('Parabéns você se tornou um mago!');
+          teste.profile();
           break;
       }
+      print(
+          '==============================================================================');
+
+/*===================================================*/
       print(' ');
+      print(' ');
+      print(' ');
+      print(' ');
+      print(
+          '==============================================================================');
+      print('''Você acorda perto de um vilareijo sem saber qual seu destino;
+             Decide ir até o vilareijo...''');
+      print(
+          '==============================================================================');
+
+      print(' ');
+      print(' ');
+      print(' ');
+      print(' ');
+      print(
+          '==============================================================================');
       print('''Prefeito: Olá visitante, como posso chama-lo?''');
       print(
           '''Você: Olá! Me chamo ${teste.nome}, sou um ${teste.classe} em busca de aventuras.''');
@@ -60,14 +103,17 @@ void main() {
   Fique a vontade para ficar em nossa vila.''');
       print(
           '''Você: Que interessante! Vou dar uma olhada depois, muito obrigado pela recepção.''');
-      print(' ');
-      /*===================================================*/
+      print(
+          '==============================================================================');
+/*===================================================*/
       while (on = true) {
         print('''ESCOLHAS:
       1. VER QUADRO DE MISSÕES;
       2. IR AO FERREIRO;
       3. DORMIR;
-      4. IR A LOJA;''');
+      4. IR A LOJA;
+      5. Treinar;
+''');
         String input5 = stdin.readLineSync()!;
         int Vila = int.parse(input5);
         switch (Vila) {
@@ -114,6 +160,16 @@ void main() {
                 on = true;
                 break;
             }
+            break;
+          case 3:
+            break;
+          case 4:
+            break;
+          case 5:
+            teste.subirnivel();
+            print('adquiriu uma exp');
+            print('Exp atua: ${teste.exp}');
+
             break;
         }
       }
